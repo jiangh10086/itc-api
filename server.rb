@@ -44,7 +44,8 @@ get '/apps' do
       apple_id: a.apple_id,
       app_icon_preview_url: a.app_icon_preview_url,
       platforms: a.platforms,
-      last_modified: a.last_modified
+      last_modified: a.last_modified,
+      str:a.to_json
     }
   end.to_json
 end
